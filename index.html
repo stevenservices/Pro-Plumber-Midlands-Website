@@ -1,0 +1,978 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pro Plumber Midlands | Expert & Emergency Plumbing Services</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            50: '#f0f7ff',
+                            100: '#e0effe',
+                            500: '#0284c7',
+                            600: '#0369a1',
+                            700: '#035483',
+                            800: '#075985',
+                            900: '#0c4a6e',
+                            dark: '#0f172a'
+                        },
+                        accent: {
+                            500: '#06b6d4',
+                            600: '#0891b2'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Plus Jakarta Sans', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .glass-card {
+            background: rgba(255, 255, 255, 0.85);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+        }
+        .hero-overlay {
+            background: linear-gradient(90deg, rgba(12, 74, 110, 0.95) 0%, rgba(12, 74, 110, 0.8) 50%, rgba(12, 74, 110, 0.4) 100%);
+        }
+        /* Custom scrollbar */
+        ::-webkit-scrollbar {
+            width: 10px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #f1f5f9;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #0284c7;
+            border-radius: 5px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #0369a1;
+        }
+    </style>
+</head>
+<body class="font-sans text-slate-800 bg-slate-50 antialiased selection:bg-brand-500 selection:text-white">
+
+    <!-- TOP ANNOUNCEMENT BAR -->
+    <div class="bg-brand-900 text-slate-200 text-xs sm:text-sm py-2 px-4 border-b border-brand-800">
+        <div class="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-2">
+            <div class="flex items-center gap-4">
+                <span class="flex items-center gap-1.5 font-medium text-emerald-400">
+                    <span class="relative flex h-2 w-2">
+                      <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+                      <span class="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
+                    </span>
+                    24/7 Emergency Response Active
+                </span>
+                <span class="hidden md:inline text-slate-400">|</span>
+                <span class="hidden md:inline text-slate-300"><i class="fa-solid fa-location-dot text-brand-500 mr-1"></i> Serving All Midlands Regions</span>
+            </div>
+            <div class="flex items-center gap-6">
+                <a href="mailto:plumbing1ah@gmail.com" class="hover:text-white transition-colors flex items-center gap-1.5">
+                    <i class="fa-regular fa-envelope text-brand-500"></i> plumbing1ah@gmail.com
+                </a>
+                <a href="tel:+441234567890" class="font-bold text-white hover:text-brand-100 flex items-center gap-1.5 bg-brand-700/50 px-2.5 py-0.5 rounded">
+                    <i class="fa-solid fa-phone text-emerald-400"></i> Call Now
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- MAIN NAVIGATION -->
+    <header class="sticky top-0 z-40 bg-white/95 backdrop-blur-md border-b border-slate-200/80 shadow-sm transition-all duration-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <!-- Brand Logo -->
+                <a href="#" class="flex items-center gap-3 group">
+                    <div class="w-11 h-11 rounded-xl bg-gradient-to-tr from-brand-700 to-brand-500 text-white flex items-center justify-center shadow-lg shadow-brand-500/20 group-hover:scale-105 transition-transform duration-200">
+                        <i class="fa-solid fa-wrench text-xl"></i>
+                    </div>
+                    <div>
+                        <span class="text-xl font-extrabold tracking-tight text-slate-900 block leading-none">PRO PLUMBER</span>
+                        <span class="text-xs font-semibold tracking-widest text-brand-600 uppercase">Midlands</span>
+                    </div>
+                </a>
+
+                <!-- Desktop Nav Links -->
+                <nav class="hidden lg:flex items-center gap-8 font-semibold text-slate-600 text-sm">
+                    <a href="#home" class="hover:text-brand-600 transition-colors py-1 border-b-2 border-transparent hover:border-brand-600">Home</a>
+                    <a href="#services" class="hover:text-brand-600 transition-colors py-1 border-b-2 border-transparent hover:border-brand-600">Services</a>
+                    <a href="#estimator" class="hover:text-brand-600 transition-colors py-1 border-b-2 border-transparent hover:border-brand-600">Cost Estimator</a>
+                    <a href="#about" class="hover:text-brand-600 transition-colors py-1 border-b-2 border-transparent hover:border-brand-600">About Us</a>
+                    <a href="#contact" class="hover:text-brand-600 transition-colors py-1 border-b-2 border-transparent hover:border-brand-600">Contact</a>
+                </nav>
+
+                <!-- Action Button & Mobile Toggle -->
+                <div class="flex items-center gap-3">
+                    <a href="#estimator" class="hidden sm:inline-flex items-center justify-center px-5 py-2.5 rounded-xl font-bold text-sm text-white bg-brand-600 hover:bg-brand-700 active:bg-brand-800 shadow-md shadow-brand-600/20 hover:shadow-lg transition-all duration-200 gap-2">
+                        <i class="fa-solid fa-calculator"></i> Get Instant Quote
+                    </a>
+                    
+                    <button id="mobile-menu-btn" class="lg:hidden p-2.5 rounded-xl text-slate-600 hover:bg-slate-100 transition-colors" aria-label="Toggle Navigation">
+                        <i class="fa-solid fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Navigation Menu -->
+        <div id="mobile-menu" class="hidden lg:hidden border-b border-slate-200 bg-white px-4 pt-2 pb-6 space-y-3">
+            <a href="#home" class="mobile-link block px-3 py-2 rounded-lg font-medium text-slate-700 hover:bg-slate-100">Home</a>
+            <a href="#services" class="mobile-link block px-3 py-2 rounded-lg font-medium text-slate-700 hover:bg-slate-100">Services</a>
+            <a href="#estimator" class="mobile-link block px-3 py-2 rounded-lg font-medium text-slate-700 hover:bg-slate-100">Cost Estimator</a>
+            <a href="#about" class="mobile-link block px-3 py-2 rounded-lg font-medium text-slate-700 hover:bg-slate-100">About Us</a>
+            <a href="#contact" class="mobile-link block px-3 py-2 rounded-lg font-medium text-slate-700 hover:bg-slate-100">Contact</a>
+            <button onclick="openModal('privacy-modal')" class="block w-full text-left px-3 py-2 rounded-lg font-medium text-slate-500 hover:bg-slate-100">Privacy Policy</button>
+            <div class="pt-2">
+                <a href="#estimator" class="mobile-link w-full inline-flex items-center justify-center px-5 py-3 rounded-xl font-bold text-white bg-brand-600 hover:bg-brand-700">
+                    Get Instant Quote
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section id="home" class="relative bg-slate-900 min-h-[85vh] flex items-center overflow-hidden">
+        <!-- Background Image with Overlay -->
+        <div class="absolute inset-0 z-0">
+            <img src="https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&q=80&w=2000" 
+                 alt="Professional Plumber at Work" 
+                 class="w-full h-full object-cover object-center"
+                 onerror="this.onerror=null; this.src='https://placehold.co/1920x1080/0f172a/ffffff?text=Pro+Plumber+Midlands';">
+            <div class="absolute inset-0 hero-overlay"></div>
+        </div>
+
+        <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 lg:py-28">
+            <div class="max-w-3xl">
+                <!-- Trust Badge Tag -->
+                <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-brand-500/20 border border-brand-400/30 text-brand-200 text-xs sm:text-sm font-semibold mb-6 backdrop-blur-sm">
+                    <i class="fa-solid fa-shield-halved text-brand-400"></i> Licensed, Insured & Local Experts
+                </div>
+
+                <h1 class="text-3xl sm:text-5xl lg:text-6xl font-extrabold text-white leading-tight tracking-tight mb-6">
+                    Reliable & Professional Plumbing Services Across <span class="text-transparent bg-clip-text bg-gradient-to-r from-brand-200 via-brand-400 to-cyan-300">Midlands</span>
+                </h1>
+
+                <p class="text-lg sm:text-xl text-slate-200 mb-8 font-normal leading-relaxed max-w-2xl">
+                    24/7 Emergency Repairs, Installations, Boiler Maintenance, and Complete Pipework Solutions You Can Count On—Fast & Guaranteed.
+                </p>
+
+                <!-- CTA Button Group -->
+                <div class="flex flex-col sm:flex-row gap-4 mb-12">
+                    <a href="#estimator" class="inline-flex items-center justify-center px-8 py-4 rounded-xl text-base font-bold text-white bg-brand-600 hover:bg-brand-500 active:bg-brand-700 shadow-lg shadow-brand-600/30 transition-all duration-200 gap-3 group">
+                        <span>Get a Free Quote</span>
+                        <i class="fa-solid fa-arrow-right group-hover:translate-x-1 transition-transform"></i>
+                    </a>
+                    <a href="tel:+441234567890" class="inline-flex items-center justify-center px-8 py-4 rounded-xl text-base font-bold text-white bg-slate-800/80 hover:bg-slate-800 border border-slate-600 hover:border-slate-500 backdrop-blur-md transition-all duration-200 gap-3">
+                        <i class="fa-solid fa-phone-volume text-emerald-400 animate-pulse"></i>
+                        <span>Emergency Contact</span>
+                    </a>
+                </div>
+
+                <!-- Fast Trust Highlights -->
+                <div class="grid grid-cols-2 sm:grid-cols-3 gap-4 pt-6 border-t border-slate-700/60 text-slate-300 text-xs sm:text-sm">
+                    <div class="flex items-center gap-2.5">
+                        <div class="w-8 h-8 rounded-lg bg-emerald-500/20 text-emerald-400 flex items-center justify-center shrink-0">
+                            <i class="fa-solid fa-clock"></i>
+                        </div>
+                        <span>30-60 Min Emergency Arrival</span>
+                    </div>
+                    <div class="flex items-center gap-2.5">
+                        <div class="w-8 h-8 rounded-lg bg-brand-500/20 text-brand-400 flex items-center justify-center shrink-0">
+                            <i class="fa-solid fa-sterling-sign"></i>
+                        </div>
+                        <span>No Hidden Call-Out Fees</span>
+                    </div>
+                    <div class="flex items-center gap-2.5 col-span-2 sm:col-span-1">
+                        <div class="w-8 h-8 rounded-lg bg-amber-500/20 text-amber-400 flex items-center justify-center shrink-0">
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <span>4.9 Star Rated Service</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- WHY CHOOSE US / BADGES -->
+    <section class="py-12 bg-white border-b border-slate-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Badge 1 -->
+                <div class="flex items-start gap-4 p-4 rounded-2xl bg-slate-50 hover:bg-brand-50/50 transition-colors border border-slate-100">
+                    <div class="w-12 h-12 rounded-xl bg-brand-100 text-brand-700 flex items-center justify-center text-xl shrink-0">
+                        <i class="fa-solid fa-certificate"></i>
+                    </div>
+                    <div>
+                        <h3 class="font-bold text-slate-900 text-base">Licensed & Insured</h3>
+                        <p class="text-xs text-slate-600 mt-1 leading-relaxed">Fully certified technicians for all domestic and commercial plumbing tasks.</p>
+                    </div>
+                </div>
+
+                <!-- Badge 2 -->
+                <div class="flex items-start gap-4 p-4 rounded-2xl bg-slate-50 hover:bg-brand-50/50 transition-colors border border-slate-100">
+                    <div class="w-12 h-12 rounded-xl bg-emerald-100 text-emerald-700 flex items-center justify-center text-xl shrink-0">
+                        <i class="fa-solid fa-bolt"></i>
+                    </div>
+                    <div>
+                        <h3 class="font-bold text-slate-900 text-base">Fast Response Time</h3>
+                        <p class="text-xs text-slate-600 mt-1 leading-relaxed">Prompt emergency callouts across all major Midlands postcodes.</p>
+                    </div>
+                </div>
+
+                <!-- Badge 3 -->
+                <div class="flex items-start gap-4 p-4 rounded-2xl bg-slate-50 hover:bg-brand-50/50 transition-colors border border-slate-100">
+                    <div class="w-12 h-12 rounded-xl bg-cyan-100 text-cyan-700 flex items-center justify-center text-xl shrink-0">
+                        <i class="fa-solid fa-receipt"></i>
+                    </div>
+                    <div>
+                        <h3 class="font-bold text-slate-900 text-base">Upfront Pricing</h3>
+                        <p class="text-xs text-slate-600 mt-1 leading-relaxed">Transparent quotes provided before any work starts. No surprise fees.</p>
+                    </div>
+                </div>
+
+                <!-- Badge 4 -->
+                <div class="flex items-start gap-4 p-4 rounded-2xl bg-slate-50 hover:bg-brand-50/50 transition-colors border border-slate-100">
+                    <div class="w-12 h-12 rounded-xl bg-amber-100 text-amber-700 flex items-center justify-center text-xl shrink-0">
+                        <i class="fa-solid fa-thumbs-up"></i>
+                    </div>
+                    <div>
+                        <h3 class="font-bold text-slate-900 text-base">100% Guaranteed</h3>
+                        <p class="text-xs text-slate-600 mt-1 leading-relaxed">All repairs and installations backed by our full satisfaction warranty.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SERVICES OFFERED -->
+    <section id="services" class="py-20 bg-slate-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <span class="text-brand-600 font-bold text-sm uppercase tracking-widest">Our Expertise</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 mt-2">Comprehensive Plumbing Solutions</h2>
+                <p class="text-slate-600 mt-4 text-base">From quick domestic leak fixes to full boiler installations, we provide complete plumbing care with precision.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Service 1 -->
+                <div class="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-200/80 flex flex-col group">
+                    <div class="relative h-48 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?auto=format&fit=crop&q=80&w=800" 
+                             alt="Emergency Plumbing" 
+                             class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                             onerror="this.onerror=null; this.src='https://placehold.co/600x400/0284c7/ffffff?text=Emergency+Plumbing';">
+                        <div class="absolute top-4 left-4 bg-red-600 text-white text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider">
+                            24/7 Priority
+                        </div>
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col justify-between">
+                        <div>
+                            <div class="text-brand-600 text-2xl mb-3">
+                                <i class="fa-solid fa-burst"></i>
+                            </div>
+                            <h3 class="text-xl font-bold text-slate-900 mb-2">Emergency Plumbing</h3>
+                            <p class="text-slate-600 text-sm leading-relaxed mb-4">Burst pipes, major water leaks, or overflowing toilets. Fast response to limit home damage.</p>
+                        </div>
+                        <a href="#contact" class="inline-flex items-center text-sm font-bold text-brand-600 hover:text-brand-700 gap-2 group-hover:translate-x-1 transition-transform">
+                            Book Emergency Call <i class="fa-solid fa-chevron-right text-xs"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-200/80 flex flex-col group">
+                    <div class="relative h-48 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1585704032915-c3400ca199e7?auto=format&fit=crop&q=80&w=800" 
+                             alt="Boiler and Heating Services" 
+                             class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                             onerror="this.onerror=null; this.src='https://placehold.co/600x400/0284c7/ffffff?text=Boiler+and+Heating';">
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col justify-between">
+                        <div>
+                            <div class="text-brand-600 text-2xl mb-3">
+                                <i class="fa-solid fa-fire-flame-curved"></i>
+                            </div>
+                            <h3 class="text-xl font-bold text-slate-900 mb-2">Boiler & Heating</h3>
+                            <p class="text-slate-600 text-sm leading-relaxed mb-4">Boiler repairs, annual servicing, radiator flushing, and central heating modernisations.</p>
+                        </div>
+                        <a href="#contact" class="inline-flex items-center text-sm font-bold text-brand-600 hover:text-brand-700 gap-2 group-hover:translate-x-1 transition-transform">
+                            Schedule Service <i class="fa-solid fa-chevron-right text-xs"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-200/80 flex flex-col group">
+                    <div class="relative h-48 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1507652313519-d4e9174996dd?auto=format&fit=crop&q=80&w=800" 
+                             alt="Bathroom Fitting" 
+                             class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                             onerror="this.onerror=null; this.src='https://placehold.co/600x400/0284c7/ffffff?text=Bathroom+Fitting';">
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col justify-between">
+                        <div>
+                            <div class="text-brand-600 text-2xl mb-3">
+                                <i class="fa-solid fa-shower"></i>
+                            </div>
+                            <h3 class="text-xl font-bold text-slate-900 mb-2">Bathroom & Kitchen Fitting</h3>
+                            <p class="text-slate-600 text-sm leading-relaxed mb-4">Full installation of modern showers, taps, sinks, bathtubs, and appliance connections.</p>
+                        </div>
+                        <a href="#contact" class="inline-flex items-center text-sm font-bold text-brand-600 hover:text-brand-700 gap-2 group-hover:translate-x-1 transition-transform">
+                            Inquire Design <i class="fa-solid fa-chevron-right text-xs"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Service 4 -->
+                <div class="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-200/80 flex flex-col group">
+                    <div class="relative h-48 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&q=80&w=800" 
+                             alt="Leak Detection" 
+                             class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                             onerror="this.onerror=null; this.src='https://placehold.co/600x400/0284c7/ffffff?text=Leak+Detection';">
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col justify-between">
+                        <div>
+                            <div class="text-brand-600 text-2xl mb-3">
+                                <i class="fa-solid fa-droplet font-bold"></i>
+                            </div>
+                            <h3 class="text-xl font-bold text-slate-900 mb-2">Leak Detection & Repair</h3>
+                            <p class="text-slate-600 text-sm leading-relaxed mb-4">Non-invasive leak detection technology to locate hidden moisture behind walls or under floors.</p>
+                        </div>
+                        <a href="#contact" class="inline-flex items-center text-sm font-bold text-brand-600 hover:text-brand-700 gap-2 group-hover:translate-x-1 transition-transform">
+                            Find a Leak <i class="fa-solid fa-chevron-right text-xs"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Service 5 -->
+                <div class="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-200/80 flex flex-col group">
+                    <div class="relative h-48 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1542013936693-884638332954?auto=format&fit=crop&q=80&w=800" 
+                             alt="Drain Unblocking" 
+                             class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                             onerror="this.onerror=null; this.src='https://placehold.co/600x400/0284c7/ffffff?text=Drain+Unblocking';">
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col justify-between">
+                        <div>
+                            <div class="text-brand-600 text-2xl mb-3">
+                                <i class="fa-solid fa-filter-circle-xmark"></i>
+                            </div>
+                            <h3 class="text-xl font-bold text-slate-900 mb-2">Drain Unblocking</h3>
+                            <p class="text-slate-600 text-sm leading-relaxed mb-4">High-pressure water jetting and drain clearing for stubborn clogs, smells, and slow drains.</p>
+                        </div>
+                        <a href="#contact" class="inline-flex items-center text-sm font-bold text-brand-600 hover:text-brand-700 gap-2 group-hover:translate-x-1 transition-transform">
+                            Clear Drains <i class="fa-solid fa-chevron-right text-xs"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Service 6 -->
+                <div class="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-200/80 flex flex-col group">
+                    <div class="relative h-48 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1607472586893-edb57bdc0e39?auto=format&fit=crop&q=80&w=800" 
+                             alt="Pipe Maintenance" 
+                             class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                             onerror="this.onerror=null; this.src='https://placehold.co/600x400/0284c7/ffffff?text=Pipe+Maintenance';">
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col justify-between">
+                        <div>
+                            <div class="text-brand-600 text-2xl mb-3">
+                                <i class="fa-solid fa-screwdriver-wrench"></i>
+                            </div>
+                            <h3 class="text-xl font-bold text-slate-900 mb-2">Pipe Maintenance</h3>
+                            <p class="text-slate-600 text-sm leading-relaxed mb-4">Comprehensive re-piping, valve upgrades, pressure regulation, and preventive care.</p>
+                        </div>
+                        <a href="#contact" class="inline-flex items-center text-sm font-bold text-brand-600 hover:text-brand-700 gap-2 group-hover:translate-x-1 transition-transform">
+                            Learn More <i class="fa-solid fa-chevron-right text-xs"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- INTERACTIVE ESTIMATOR / QUOTE CALCULATOR -->
+    <section id="estimator" class="py-20 bg-gradient-to-b from-brand-900 to-slate-900 text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                
+                <div class="lg:col-span-5">
+                    <span class="text-cyan-400 font-bold text-sm uppercase tracking-widest">Instant Cost Estimator</span>
+                    <h2 class="text-3xl sm:text-4xl font-extrabold text-white mt-2 leading-tight">Calculate Your Plumbing Estimate in Seconds</h2>
+                    <p class="text-slate-300 mt-4 text-base leading-relaxed">
+                        Get an instant ballpark estimate for your required service. Send your selections directly to our team at <span class="text-brand-200 font-medium">plumbing1ah@gmail.com</span> for confirmation.
+                    </p>
+
+                    <div class="mt-8 space-y-4">
+                        <div class="flex items-center gap-3 text-slate-200 text-sm">
+                            <div class="w-6 h-6 rounded-full bg-emerald-500/20 text-emerald-400 flex items-center justify-center text-xs">
+                                <i class="fa-solid fa-check"></i>
+                            </div>
+                            <span>No obligation quote</span>
+                        </div>
+                        <div class="flex items-center gap-3 text-slate-200 text-sm">
+                            <div class="w-6 h-6 rounded-full bg-emerald-500/20 text-emerald-400 flex items-center justify-center text-xs">
+                                <i class="fa-solid fa-check"></i>
+                            </div>
+                            <span>Transparent pricing without hidden fees</span>
+                        </div>
+                        <div class="flex items-center gap-3 text-slate-200 text-sm">
+                            <div class="w-6 h-6 rounded-full bg-emerald-500/20 text-emerald-400 flex items-center justify-center text-xs">
+                                <i class="fa-solid fa-check"></i>
+                            </div>
+                            <span>Direct response within 30 minutes</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Calculator Form Card -->
+                <div class="lg:col-span-7 bg-white/10 backdrop-blur-xl p-6 sm:p-8 rounded-3xl border border-white/10 shadow-2xl">
+                    <form id="calculator-form" onsubmit="handleQuoteSubmit(event)" class="space-y-6">
+                        
+                        <!-- Service Type Selection -->
+                        <div>
+                            <label class="block text-sm font-semibold text-slate-200 mb-2">1. Select Service Type</label>
+                            <select id="calc-service" onchange="calculateEstimate()" class="w-full bg-slate-800/90 border border-slate-700 text-white rounded-xl p-3.5 focus:ring-2 focus:ring-brand-500 focus:outline-none font-medium">
+                                <option value="80" data-name="Leak Repair / Tap Replacement">Leak Repair / Tap Fix (£80+)</option>
+                                <option value="120" data-name="Drain Unblocking">Drain Unblocking (£120+)</option>
+                                <option value="150" data-name="Boiler Repair / Servicing">Boiler Servicing & Repair (£150+)</option>
+                                <option value="250" data-name="Emergency Callout & Pipe Repair">24/7 Emergency Pipe Fix (£250+)</option>
+                                <option value="400" data-name="Bathroom / Kitchen Installation">Bathroom / Sanitary Appliance Fitting (£400+)</option>
+                            </select>
+                        </div>
+
+                        <!-- Urgency Selector -->
+                        <div>
+                            <label class="block text-sm font-semibold text-slate-200 mb-2">2. Urgency Level</label>
+                            <div class="grid grid-cols-2 gap-4">
+                                <label class="cursor-pointer">
+                                    <input type="radio" name="urgency" value="standard" checked onchange="calculateEstimate()" class="peer sr-only">
+                                    <div class="p-3.5 rounded-xl border border-slate-700 bg-slate-800/60 peer-checked:border-brand-500 peer-checked:bg-brand-600/30 text-center text-slate-300 peer-checked:text-white transition-all">
+                                        <i class="fa-regular fa-calendar-check block text-lg mb-1"></i>
+                                        <span class="text-xs font-bold block">Standard Booking</span>
+                                    </div>
+                                </label>
+                                <label class="cursor-pointer">
+                                    <input type="radio" name="urgency" value="emergency" onchange="calculateEstimate()" class="peer sr-only">
+                                    <div class="p-3.5 rounded-xl border border-slate-700 bg-slate-800/60 peer-checked:border-red-500 peer-checked:bg-red-600/30 text-center text-slate-300 peer-checked:text-white transition-all">
+                                        <i class="fa-solid fa-bolt block text-lg mb-1 text-amber-400"></i>
+                                        <span class="text-xs font-bold block">Emergency (Same Day)</span>
+                                    </div>
+                                </label>
+                            </div>
+                        </div>
+
+                        <!-- Fixtures Range Slider -->
+                        <div>
+                            <div class="flex justify-between text-sm font-semibold text-slate-200 mb-2">
+                                <span>3. Scope / Fixtures Affected</span>
+                                <span id="fixture-count-display" class="text-cyan-400 font-bold">1 Fixture/Area</span>
+                            </div>
+                            <input type="range" id="calc-fixtures" min="1" max="5" value="1" oninput="calculateEstimate()" class="w-full h-2 bg-slate-700 rounded-lg appearance-none cursor-pointer accent-brand-500">
+                            <div class="flex justify-between text-xs text-slate-400 mt-1">
+                                <span>Minor Fix</span>
+                                <span>Multi-Room / Complex</span>
+                            </div>
+                        </div>
+
+                        <!-- Price Output Card -->
+                        <div class="bg-slate-800/80 p-5 rounded-2xl border border-slate-700/80 flex flex-col sm:flex-row items-center justify-between gap-4">
+                            <div>
+                                <span class="text-xs text-slate-400 uppercase font-semibold">Estimated Price Range</span>
+                                <div id="calc-price-output" class="text-3xl font-extrabold text-cyan-300 mt-0.5">£80 - £120</div>
+                                <span class="text-[11px] text-slate-400">*Final price confirmed upon visual inspection.</span>
+                            </div>
+                            
+                            <button type="submit" class="w-full sm:w-auto px-6 py-3.5 bg-brand-500 hover:bg-brand-400 text-white font-bold text-sm rounded-xl transition-colors shadow-lg shadow-brand-500/30 flex items-center justify-center gap-2">
+                                <i class="fa-solid fa-paper-plane"></i> Send This Quote Request
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT US SECTION -->
+    <section id="about" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+                
+                <!-- Left Image Composition -->
+                <div class="relative">
+                    <div class="relative rounded-3xl overflow-hidden shadow-2xl border border-slate-100">
+                        <img src="https://images.unsplash.com/photo-1541888946425-d0fbb186a5b7?auto=format&fit=crop&q=80&w=1000" 
+                             alt="Pro Plumber Midlands Team" 
+                             class="w-full h-[450px] object-cover"
+                             onerror="this.onerror=null; this.src='https://placehold.co/800x600/0284c7/ffffff?text=Pro+Plumber+Team';">
+                    </div>
+                    <!-- Experience Counter Floating Box -->
+                    <div class="absolute -bottom-6 -right-4 sm:bottom-6 sm:right-6 bg-brand-600 text-white p-6 rounded-2xl shadow-xl max-w-xs border border-brand-500">
+                        <div class="text-4xl font-extrabold">15+</div>
+                        <div class="text-sm font-medium text-brand-100 mt-1">Years Serving Homes & Businesses in the Midlands</div>
+                    </div>
+                </div>
+
+                <!-- Right Narrative -->
+                <div>
+                    <span class="text-brand-600 font-bold text-sm uppercase tracking-widest">About Pro Plumber Midlands</span>
+                    <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 mt-2 mb-6 leading-tight">
+                        Your Dedicated Local Plumbing Specialists
+                    </h2>
+                    
+                    <p class="text-slate-600 text-base leading-relaxed mb-4">
+                        At <strong class="text-slate-900">Pro Plumber Midlands</strong>, we take pride in delivering top-tier plumbing, heating, and emergency repair services across the region. Built on honesty, punctuality, and craftsmanship, our team handles everything from minor residential leaks to large commercial installations.
+                    </p>
+
+                    <p class="text-slate-600 text-base leading-relaxed mb-8">
+                        We understand that plumbing emergencies create immense stress. That’s why we maintain a rapid response team equipped with modern diagnostics to solve problems fast, preventing costly water damage to your property.
+                    </p>
+
+                    <!-- Feature Checks -->
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                        <div class="flex items-center gap-3">
+                            <div class="w-8 h-8 rounded-full bg-brand-50 text-brand-600 flex items-center justify-center text-sm font-bold shrink-0">
+                                <i class="fa-solid fa-check"></i>
+                            </div>
+                            <span class="text-sm font-semibold text-slate-800">Fully Certified Engineers</span>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <div class="w-8 h-8 rounded-full bg-brand-50 text-brand-600 flex items-center justify-center text-sm font-bold shrink-0">
+                                <i class="fa-solid fa-check"></i>
+                            </div>
+                            <span class="text-sm font-semibold text-slate-800">No Hidden Costs</span>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <div class="w-8 h-8 rounded-full bg-brand-50 text-brand-600 flex items-center justify-center text-sm font-bold shrink-0">
+                                <i class="fa-solid fa-check"></i>
+                            </div>
+                            <span class="text-sm font-semibold text-slate-800">Clean & Respectful Service</span>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <div class="w-8 h-8 rounded-full bg-brand-50 text-brand-600 flex items-center justify-center text-sm font-bold shrink-0">
+                                <i class="fa-solid fa-check"></i>
+                            </div>
+                            <span class="text-sm font-semibold text-slate-800">Guaranteed Workmanship</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- TESTIMONIALS SECTION -->
+    <section class="py-20 bg-slate-50 border-t border-b border-slate-200/70">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <span class="text-brand-600 font-bold text-sm uppercase tracking-widest">Client Feedback</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 mt-2">What Our Customers Say</h2>
+                <p class="text-slate-600 mt-4 text-base">Trusted by hundreds of homeowners and business managers across the Midlands.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Review 1 -->
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-200 flex flex-col justify-between">
+                    <div>
+                        <div class="flex text-amber-400 text-sm gap-1 mb-4">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-slate-600 text-sm italic leading-relaxed mb-6">
+                            "Called Pro Plumber Midlands at 2 AM for a burst pipe in our kitchen. They arrived within 40 minutes and resolved the issue quickly. Absolutely lifesaving service!"
+                        </p>
+                    </div>
+                    <div class="flex items-center gap-3 pt-4 border-t border-slate-100">
+                        <div class="w-10 h-10 rounded-full bg-brand-100 text-brand-700 font-bold flex items-center justify-center text-sm">
+                            JD
+                        </div>
+                        <div>
+                            <div class="font-bold text-slate-900 text-sm">James D.</div>
+                            <div class="text-xs text-slate-500">Birmingham Resident</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Review 2 -->
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-200 flex flex-col justify-between">
+                    <div>
+                        <div class="flex text-amber-400 text-sm gap-1 mb-4">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-slate-600 text-sm italic leading-relaxed mb-6">
+                            "Extremely professional boiler installation. Upfront quote was matched exactly, and they left the property spotless. Highly recommend Pro Plumber!"
+                        </p>
+                    </div>
+                    <div class="flex items-center gap-3 pt-4 border-t border-slate-100">
+                        <div class="w-10 h-10 rounded-full bg-brand-100 text-brand-700 font-bold flex items-center justify-center text-sm">
+                            SM
+                        </div>
+                        <div>
+                            <div class="font-bold text-slate-900 text-sm">Sarah M.</div>
+                            <div class="text-xs text-slate-500">Solihull Homeowner</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Review 3 -->
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-200 flex flex-col justify-between">
+                    <div>
+                        <div class="flex text-amber-400 text-sm gap-1 mb-4">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-slate-600 text-sm italic leading-relaxed mb-6">
+                            "Unblocked our drain fast when others gave up. Reasonable pricing and very polite plumber. Will definitely use them for future maintenance."
+                        </p>
+                    </div>
+                    <div class="flex items-center gap-3 pt-4 border-t border-slate-100">
+                        <div class="w-10 h-10 rounded-full bg-brand-100 text-brand-700 font-bold flex items-center justify-center text-sm">
+                            RK
+                        </div>
+                        <div>
+                            <div class="font-bold text-slate-900 text-sm">Robert K.</div>
+                            <div class="text-xs text-slate-500">Coventry Business Owner</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT US SECTION -->
+    <section id="contact" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+                
+                <!-- Contact Info Details -->
+                <div class="lg:col-span-5 space-y-8">
+                    <div>
+                        <span class="text-brand-600 font-bold text-sm uppercase tracking-widest">Get In Touch</span>
+                        <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 mt-2">Contact Pro Plumber Midlands</h2>
+                        <p class="text-slate-600 mt-4 text-base leading-relaxed">
+                            Have an issue or need to schedule routine plumbing maintenance? Reach out directly to our dispatch team.
+                        </p>
+                    </div>
+
+                    <div class="space-y-6">
+                        <!-- Direct Email Block -->
+                        <div class="flex items-start gap-4">
+                            <div class="w-12 h-12 rounded-xl bg-brand-50 text-brand-600 flex items-center justify-center text-xl shrink-0">
+                                <i class="fa-solid fa-envelope"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-slate-900 text-base">Direct Email</h4>
+                                <a href="mailto:plumbing1ah@gmail.com" class="text-brand-600 font-semibold hover:underline block text-sm mt-0.5">
+                                    plumbing1ah@gmail.com
+                                </a>
+                                <p class="text-xs text-slate-500 mt-1">Monitored 24/7 for quotes and inquiries</p>
+                            </div>
+                        </div>
+
+                        <!-- Service Hours Block -->
+                        <div class="flex items-start gap-4">
+                            <div class="w-12 h-12 rounded-xl bg-brand-50 text-brand-600 flex items-center justify-center text-xl shrink-0">
+                                <i class="fa-solid fa-clock"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-slate-900 text-base">Operating Hours</h4>
+                                <p class="text-slate-700 text-sm mt-0.5 font-medium">Standard Hours: Mon - Sat (8:00 AM - 6:00 PM)</p>
+                                <p class="text-emerald-600 text-xs font-bold mt-1">24/7 Emergency Line Active Always</p>
+                            </div>
+                        </div>
+
+                        <!-- Coverage Areas Block -->
+                        <div class="flex items-start gap-4">
+                            <div class="w-12 h-12 rounded-xl bg-brand-50 text-brand-600 flex items-center justify-center text-xl shrink-0">
+                                <i class="fa-solid fa-map-location-dot"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-slate-900 text-base">Primary Coverage</h4>
+                                <p class="text-slate-600 text-sm mt-0.5">
+                                    Birmingham, Solihull, Coventry, Wolverhampton, Dudley, Walsall, Leicester, and surrounding Midlands postcodes.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Call Box -->
+                    <div class="p-6 rounded-2xl bg-slate-900 text-white">
+                        <div class="flex items-center justify-between">
+                            <div>
+                                <span class="text-xs text-brand-400 uppercase font-bold tracking-wider">Urgent Emergency?</span>
+                                <div class="text-xl font-extrabold mt-1">Speak To Plumber Now</div>
+                            </div>
+                            <a href="tel:+441234567890" class="px-4 py-2.5 bg-emerald-500 hover:bg-emerald-400 text-white font-bold text-sm rounded-xl transition-colors">
+                                <i class="fa-solid fa-phone mr-1"></i> Call
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Form Card -->
+                <div class="lg:col-span-7 bg-slate-50 p-6 sm:p-10 rounded-3xl border border-slate-200">
+                    <h3 class="text-2xl font-bold text-slate-900 mb-2">Send Us a Direct Message</h3>
+                    <p class="text-slate-600 text-sm mb-6">Fill out the form below and we'll reply directly to your email address.</p>
+
+                    <form id="contact-form" onsubmit="handleContactSubmit(event)" class="space-y-4">
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                            <div>
+                                <label for="contact-name" class="block text-xs font-bold text-slate-700 uppercase mb-1">Your Name *</label>
+                                <input type="text" id="contact-name" required placeholder="John Smith" class="w-full bg-white border border-slate-300 rounded-xl p-3 text-slate-900 text-sm focus:ring-2 focus:ring-brand-500 focus:outline-none">
+                            </div>
+                            <div>
+                                <label for="contact-phone" class="block text-xs font-bold text-slate-700 uppercase mb-1">Phone Number *</label>
+                                <input type="tel" id="contact-phone" required placeholder="07123 456789" class="w-full bg-white border border-slate-300 rounded-xl p-3 text-slate-900 text-sm focus:ring-2 focus:ring-brand-500 focus:outline-none">
+                            </div>
+                        </div>
+
+                        <div>
+                            <label for="contact-email" class="block text-xs font-bold text-slate-700 uppercase mb-1">Email Address *</label>
+                            <input type="email" id="contact-email" required placeholder="name@example.com" class="w-full bg-white border border-slate-300 rounded-xl p-3 text-slate-900 text-sm focus:ring-2 focus:ring-brand-500 focus:outline-none">
+                        </div>
+
+                        <div>
+                            <label for="contact-subject" class="block text-xs font-bold text-slate-700 uppercase mb-1">Service Required</label>
+                            <select id="contact-subject" class="w-full bg-white border border-slate-300 rounded-xl p-3 text-slate-900 text-sm focus:ring-2 focus:ring-brand-500 focus:outline-none">
+                                <option value="General Inquiry">General Inquiry</option>
+                                <option value="Emergency Leak">Emergency Plumbing</option>
+                                <option value="Boiler Repair">Boiler & Heating Repair</option>
+                                <option value="Bathroom Installation">Bathroom / Sanitary Installation</option>
+                                <option value="Drain Unblocking">Drain Clearance</option>
+                            </select>
+                        </div>
+
+                        <div>
+                            <label for="contact-message" class="block text-xs font-bold text-slate-700 uppercase mb-1">Message Detail *</label>
+                            <textarea id="contact-message" rows="4" required placeholder="Describe your plumbing issue or requirements..." class="w-full bg-white border border-slate-300 rounded-xl p-3 text-slate-900 text-sm focus:ring-2 focus:ring-brand-500 focus:outline-none"></textarea>
+                        </div>
+
+                        <button type="submit" class="w-full py-4 bg-brand-600 hover:bg-brand-700 text-white font-bold text-base rounded-xl transition-colors shadow-lg shadow-brand-600/20 flex items-center justify-center gap-2">
+                            <i class="fa-solid fa-paper-plane"></i> Send Message to plumbing1ah@gmail.com
+                        </button>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-slate-900 text-slate-400 py-12 border-t border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 pb-12 border-b border-slate-800">
+                
+                <!-- Footer Brand Column -->
+                <div class="md:col-span-2 space-y-4">
+                    <a href="#" class="flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-xl bg-brand-600 text-white flex items-center justify-center font-bold text-lg">
+                            <i class="fa-solid fa-wrench"></i>
+                        </div>
+                        <span class="text-xl font-extrabold text-white tracking-tight">PRO PLUMBER <span class="text-brand-500">MIDLANDS</span></span>
+                    </a>
+                    <p class="text-sm text-slate-400 max-w-sm leading-relaxed">
+                        Top-rated certified plumbing and heating specialists committed to speed, reliability, and guaranteed quality for residential and commercial clients across the Midlands.
+                    </p>
+                </div>
+
+                <!-- Quick Links Column -->
+                <div>
+                    <h4 class="text-white font-bold text-sm uppercase tracking-wider mb-4">Quick Navigation</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="#home" class="hover:text-white transition-colors">Home</a></li>
+                        <li><a href="#services" class="hover:text-white transition-colors">Services</a></li>
+                        <li><a href="#estimator" class="hover:text-white transition-colors">Cost Estimator</a></li>
+                        <li><a href="#about" class="hover:text-white transition-colors">About Us</a></li>
+                        <li><a href="#contact" class="hover:text-white transition-colors">Contact Us</a></li>
+                    </ul>
+                </div>
+
+                <!-- Legal Column -->
+                <div>
+                    <h4 class="text-white font-bold text-sm uppercase tracking-wider mb-4">Legal & Support</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><button onclick="openModal('privacy-modal')" class="hover:text-white transition-colors text-left">Privacy Policy</button></li>
+                        <li><a href="#contact" class="hover:text-white transition-colors">Emergency Dispatch</a></li>
+                        <li><a href="mailto:plumbing1ah@gmail.com" class="hover:text-white transition-colors">plumbing1ah@gmail.com</a></li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <!-- Bottom Copyright Bar -->
+            <div class="pt-8 flex flex-col sm:flex-row justify-between items-center text-xs gap-4">
+                <p>&copy; <span id="current-year"></span> Pro Plumber Midlands. All rights reserved.</p>
+                <p>Contact Email: <a href="mailto:plumbing1ah@gmail.com" class="text-brand-400 hover:underline">plumbing1ah@gmail.com</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- PRIVACY POLICY MODAL -->
+    <div id="privacy-modal" class="fixed inset-0 z-50 bg-slate-900/80 backdrop-blur-sm flex items-center justify-center p-4 hidden opacity-0 transition-opacity duration-300">
+        <div class="bg-white rounded-3xl max-w-3xl w-full max-h-[85vh] flex flex-col shadow-2xl overflow-hidden border border-slate-200">
+            <!-- Modal Header -->
+            <div class="px-6 py-5 border-b border-slate-100 flex items-center justify-between bg-slate-50">
+                <h3 class="text-xl font-bold text-slate-900 flex items-center gap-2">
+                    <i class="fa-solid fa-shield-halved text-brand-600"></i> Privacy Policy - Pro Plumber Midlands
+                </h3>
+                <button onclick="closeModal('privacy-modal')" class="text-slate-400 hover:text-slate-600 p-2 rounded-xl hover:bg-slate-200/50 transition-colors">
+                    <i class="fa-solid fa-xmark text-lg"></i>
+                </button>
+            </div>
+
+            <!-- Modal Content Body -->
+            <div class="p-6 sm:p-8 overflow-y-auto space-y-6 text-slate-600 text-sm leading-relaxed">
+                <div>
+                    <h4 class="font-bold text-slate-900 text-base mb-2">1. Introduction</h4>
+                    <p>At <strong>Pro Plumber Midlands</strong> (Contact: <code>plumbing1ah@gmail.com</code>), we respect your privacy and are committed to protecting personal data collected when you use our website or request plumbing services.</p>
+                </div>
+
+                <div>
+                    <h4 class="font-bold text-slate-900 text-base mb-2">2. Data We Collect</h4>
+                    <p>We collect information you voluntarily provide through our contact form and quote estimator, including:</p>
+                    <ul class="list-disc list-inside mt-2 space-y-1 text-slate-700">
+                        <li>Full Name</li>
+                        <li>Contact Email Address</li>
+                        <li>Phone Number</li>
+                        <li>Property/Service Location Details</li>
+                        <li>Plumbing issue details provided in inquiries</li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="font-bold text-slate-900 text-base mb-2">3. How We Use Your Information</h4>
+                    <p>Your details are strictly used to respond to your plumbing inquiries, dispatch emergency plumbing support, calculate cost estimates, and communicate service updates. We do not sell or rent customer data to third parties.</p>
+                </div>
+
+                <div>
+                    <h4 class="font-bold text-slate-900 text-base mb-2">4. Data Security & Contact</h4>
+                    <p>We implement appropriate technical safeguards to ensure data safety. If you have any questions regarding your data or wish to request removal, contact us directly at <a href="mailto:plumbing1ah@gmail.com" class="text-brand-600 font-semibold underline">plumbing1ah@gmail.com</a>.</p>
+                </div>
+            </div>
+
+            <!-- Modal Footer -->
+            <div class="px-6 py-4 border-t border-slate-100 bg-slate-50 flex justify-end">
+                <button onclick="closeModal('privacy-modal')" class="px-6 py-2.5 bg-brand-600 hover:bg-brand-700 text-white font-bold text-sm rounded-xl transition-colors">
+                    I Understand
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- JAVASCRIPT INTERACTION LOGIC -->
+    <script>
+        // Set current copyright year
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+
+        // Mobile Menu Toggle
+        const mobileBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Close mobile menu on link click
+        document.querySelectorAll('.mobile-link').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+
+        // Quote Calculator Logic
+        function calculateEstimate() {
+            const serviceSelect = document.getElementById('calc-service');
+            const basePrice = parseFloat(serviceSelect.value);
+            
+            const isEmergency = document.querySelector('input[name="urgency"]:checked').value === 'emergency';
+            const urgencyMultiplier = isEmergency ? 1.4 : 1.0;
+
+            const fixtureCount = parseInt(document.getElementById('calc-fixtures').value);
+            document.getElementById('fixture-count-display').textContent = fixtureCount + (fixtureCount === 1 ? ' Fixture/Area' : ' Fixtures/Areas');
+
+            // Calculation formula
+            const minEst = Math.round((basePrice * urgencyMultiplier) + ((fixtureCount - 1) * 35));
+            const maxEst = Math.round(minEst * 1.35);
+
+            document.getElementById('calc-price-output').textContent = `£${minEst} - £${maxEst}`;
+        }
+
+        // Quote Submit to Email Action
+        function handleQuoteSubmit(e) {
+            e.preventDefault();
+            const serviceSelect = document.getElementById('calc-service');
+            const selectedOption = serviceSelect.options[serviceSelect.selectedIndex];
+            const serviceName = selectedOption.getAttribute('data-name');
+            const urgency = document.querySelector('input[name="urgency"]:checked').value;
+            const fixtures = document.getElementById('calc-fixtures').value;
+            const estimatedPrice = document.getElementById('calc-price-output').textContent;
+
+            const mailToUrl = `mailto:plumbing1ah@gmail.com?subject=New Quote Request: ${encodeURIComponent(serviceName)}&body=${encodeURIComponent(
+                `Hello Pro Plumber Midlands,\n\nI calculated a quote estimate on your website:\n- Service: ${serviceName}\n- Urgency: ${urgency.toUpperCase()}\n- Fixtures/Areas: ${fixtures}\n- Estimated Price Range: ${estimatedPrice}\n\nPlease contact me regarding scheduling.`
+            )}`;
+
+            window.location.href = mailToUrl;
+        }
+
+        // Contact Form Submit to Email Action
+        function handleContactSubmit(e) {
+            e.preventDefault();
+            const name = document.getElementById('contact-name').value;
+            const phone = document.getElementById('contact-phone').value;
+            const email = document.getElementById('contact-email').value;
+            const subject = document.getElementById('contact-subject').value;
+            const message = document.getElementById('contact-message').value;
+
+            const mailToUrl = `mailto:plumbing1ah@gmail.com?subject=${encodeURIComponent('Inquiry: ' + subject)}&body=${encodeURIComponent(
+                `Name: ${name}\nPhone: ${phone}\nEmail: ${email}\n\nMessage:\n${message}`
+            )}`;
+
+            window.location.href = mailToUrl;
+        }
+
+        // Modal Controls
+        function openModal(id) {
+            const modal = document.getElementById(id);
+            modal.classList.remove('hidden');
+            setTimeout(() => {
+                modal.classList.remove('opacity-0');
+            }, 10);
+        }
+
+        function closeModal(id) {
+            const modal = document.getElementById(id);
+            modal.classList.add('opacity-0');
+            setTimeout(() => {
+                modal.classList.add('hidden');
+            }, 300);
+        }
+
+        // Initial calculation on page load
+        calculateEstimate();
+    </script>
+</body>
+</html>
